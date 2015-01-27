@@ -181,16 +181,7 @@
 		  .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
 		  .style("display", function(d) { return d.parent === root ? null : "none"; })
 		  .text(function(d) { 
-			if (d.children===null){
-				var words = d.title.split(' ');
-				var line = new Array();
-				var text = "";
-				var width = 20;
-				var height = 10;
-			}else{
 				return d.title; 
-			}
-			
 		  });
 
 		  
